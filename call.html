@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Live Cosmic Reading — Souleora</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0a0e1a;
+    --purple: #13102a;
+    --gold: #d4a853;
+    --gold-soft: #e8c97a;
+    --white: #f0eee6;
+    --lavender: #9b8ec4;
+    --rose: #c4849b;
+    --green: #4ade80;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--navy); color: var(--white); font-family: 'Raleway', sans-serif; font-weight: 300; line-height: 1.7; }
+  h1,h2,h3,h4 { font-family: 'Cormorant Garamond', serif; font-weight: 400; }
+  a { color: var(--gold); text-decoration: none; }
+
+  .hero-call {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient(ellipse at 50% 30%, #1a1540 0%, #0a0e1a 70%);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-call::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(1px 1px at 10% 15%, rgba(255,255,255,0.5), transparent),
+      radial-gradient(1.5px 1.5px at 40% 8%, rgba(212,168,83,0.4), transparent),
+      radial-gradient(1px 1px at 70% 50%, rgba(255,255,255,0.3), transparent),
+      radial-gradient(1px 1px at 85% 70%, rgba(155,142,196,0.3), transparent);
+    pointer-events: none;
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 700px; }
+  .hero-badge {
+    display: inline-block; padding: 6px 18px; border-radius: 20px;
+    border: 1px solid rgba(212,168,83,0.3); background: rgba(212,168,83,0.08);
+    font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold);
+    margin-bottom: 25px;
+  }
+  .hero-call h1 { font-size: 48px; margin-bottom: 15px; line-height: 1.15; }
+  .hero-call h1 span { color: var(--gold); }
+  .hero-call .subtitle { font-size: 18px; color: rgba(240,238,230,0.7); margin-bottom: 35px; max-width: 550px; margin-left: auto; margin-right: auto; }
+  
+  .price-hero {
+    display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px;
+  }
+  .price-option {
+    background: rgba(19,16,42,0.7); border: 1px solid rgba(212,168,83,0.15);
+    border-radius: 14px; padding: 25px 30px; min-width: 200px; cursor: pointer;
+    transition: all 0.3s; position: relative;
+  }
+  .price-option:hover, .price-option.selected {
+    border-color: var(--gold); transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  .price-option.popular::before {
+    content: 'BEST VALUE';
+    position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
+    background: var(--gold); color: var(--navy);
+    font-size: 10px; font-weight: 600; letter-spacing: 1px;
+    padding: 3px 12px; border-radius: 10px;
+  }
+  .price-option .duration { font-family: 'Cormorant Garamond', serif; font-size: 24px; margin-bottom: 5px; }
+  .price-option .amount { font-size: 32px; font-weight: 600; color: var(--gold); }
+  .price-option .per { font-size: 12px; color: var(--lavender); }
+
+  .trust-badges {
+    display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;
+    font-size: 13px; color: rgba(240,238,230,0.5); margin-bottom: 40px;
+  }
+
+  /* Booking Section */
+  .section { padding: 80px 30px; max-width: 900px; margin: 0 auto; }
+  .section-head { text-align: center; margin-bottom: 50px; }
+  .section-head h2 { font-size: 36px; margin-bottom: 10px; }
+  .section-head p { color: var(--lavender); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; }
+
+  .booking-form {
+    background: linear-gradient(145deg, rgba(19,16,42,0.7), rgba(10,14,26,0.9));
+    border: 1px solid rgba(212,168,83,0.12); border-radius: 20px;
+    padding: 45px; max-width: 550px; margin: 0 auto;
+  }
+  .form-group { margin-bottom: 20px; }
+  .form-group label {
+    display: block; font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 8px;
+  }
+  .form-group input, .form-group select {
+    width: 100%; padding: 14px 18px; background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(212,168,83,0.15); border-radius: 8px;
+    color: var(--white); font-family: 'Raleway', sans-serif; font-size: 14px;
+    outline: none; transition: border-color 0.3s;
+  }
+  .form-group input:focus, .form-group select:focus { border-color: rgba(212,168,83,0.4); }
+  .form-group input::placeholder { color: rgba(240,238,230,0.3); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+
+  .btn-book {
+    width: 100%; padding: 16px; background: var(--gold); color: var(--navy);
+    border: none; border-radius: 10px; font-family: 'Raleway', sans-serif;
+    font-size: 15px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+    cursor: pointer; transition: all 0.3s; margin-top: 10px;
+  }
+  .btn-book:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(212,168,83,0.35); }
+
+  .form-note { text-align: center; font-size: 12px; color: rgba(240,238,230,0.35); margin-top: 15px; }
+
+  /* How It Works */
+  .steps { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; }
+  .step {
+    flex: 1; min-width: 200px; text-align: center; padding: 30px 20px;
+    background: rgba(19,16,42,0.5); border: 1px solid rgba(212,168,83,0.08);
+    border-radius: 14px;
+  }
+  .step-num {
+    width: 50px; height: 50px; border-radius: 50%;
+    background: rgba(212,168,83,0.1); border: 1px solid rgba(212,168,83,0.3);
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 15px; font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; color: var(--gold);
+  }
+  .step h3 { font-size: 20px; margin-bottom: 8px; }
+  .step p { font-size: 13px; color: rgba(240,238,230,0.6); }
+
+  /* What to Expect */
+  .expect-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .expect-card {
+    padding: 25px; background: rgba(19,16,42,0.5);
+    border: 1px solid rgba(212,168,83,0.08); border-radius: 12px;
+  }
+  .expect-card h4 { font-size: 18px; color: var(--gold); margin-bottom: 8px; }
+  .expect-card p { font-size: 14px; color: rgba(240,238,230,0.65); }
+
+  /* Testimonials */
+  .testimonials { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+  .testimonial {
+    padding: 25px; background: rgba(19,16,42,0.5);
+    border: 1px solid rgba(212,168,83,0.08); border-radius: 12px;
+  }
+  .testimonial .stars { color: var(--gold); margin-bottom: 10px; letter-spacing: 2px; }
+  .testimonial blockquote { font-size: 14px; color: rgba(240,238,230,0.75); font-style: italic; margin-bottom: 12px; line-height: 1.7; }
+  .testimonial .name { font-size: 13px; color: var(--gold); }
+
+  /* FAQ */
+  .faq-item { border-bottom: 1px solid rgba(212,168,83,0.1); padding: 20px 0; }
+  .faq-item h4 { font-size: 18px; color: var(--white); margin-bottom: 8px; cursor: pointer; }
+  .faq-item p { font-size: 14px; color: rgba(240,238,230,0.6); line-height: 1.8; }
+
+  /* Urgency Banner */
+  .urgency {
+    background: linear-gradient(90deg, rgba(212,168,83,0.1), rgba(155,142,196,0.05));
+    border: 1px solid rgba(212,168,83,0.2); border-radius: 12px;
+    padding: 20px 30px; text-align: center; margin-bottom: 40px;
+  }
+  .urgency p { font-size: 15px; }
+  .urgency strong { color: var(--gold); }
+
+  /* Footer */
+  footer { text-align: center; padding: 40px; border-top: 1px solid rgba(212,168,83,0.08); margin-top: 60px; }
+  footer .brand { font-family: 'Cormorant Garamond', serif; font-size: 16px; letter-spacing: 6px; color: var(--gold); margin-bottom: 10px; }
+  footer .copy { font-size: 11px; color: rgba(240,238,230,0.25); }
+
+  @media (max-width: 600px) {
+    .hero-call h1 { font-size: 32px; }
+    .price-hero { flex-direction: column; align-items: center; }
+    .expect-grid, .testimonials { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .booking-form { padding: 30px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero-call">
+  <div class="hero-content">
+    <div class="hero-badge">✨ AI-Powered Live Readings</div>
+    <h1>Speak to <span>Luna</span>, Your Personal Astrologer</h1>
+    <p class="subtitle">A deeply personal, real-time astrology reading over the phone. Luna pulls your birth chart live and walks you through your cosmic blueprint — conversationally, warmly, and with stunning accuracy.</p>
+
+    <div class="price-hero">
+      <div class="price-option" onclick="selectPlan(this, '15min')">
+        <div class="duration">15 Minutes</div>
+        <div class="amount">$29.99</div>
+        <div class="per">$2.00/min</div>
+      </div>
+      <div class="price-option popular selected" onclick="selectPlan(this, '30min')">
+        <div class="duration">30 Minutes</div>
+        <div class="amount">$49.99</div>
+        <div class="per">$1.67/min</div>
+      </div>
+      <div class="price-option" onclick="selectPlan(this, '60min')">
+        <div class="duration">60 Minutes</div>
+        <div class="amount">$79.99</div>
+        <div class="per">$1.33/min</div>
+      </div>
+    </div>
+
+    <div class="trust-badges">
+      <span>🔮 Real birth chart data</span>
+      <span>🎙️ Natural voice conversation</span>
+      <span>⚡ Available 24/7</span>
+      <span>💜 She remembers you</span>
+    </div>
+
+    <a href="#book" class="btn-book" style="display:inline-block; max-width:300px;">Book Your Reading Now</a>
+  </div>
+</section>
+
+<!-- URGENCY -->
+<div class="section">
+  <div class="urgency">
+    <p>🌙 <strong>Mercury enters Taurus this week</strong> — a powerful time for self-reflection. Book a reading now and understand how this transit affects YOUR chart specifically.</p>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="section">
+  <div class="section-head">
+    <h2>How Your Reading Works</h2>
+    <p>Three simple steps to cosmic clarity</p>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Share Your Details</h3>
+      <p>Enter your birth date, time, and location. Choose your reading length and preferred call time.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Luna Calls You</h3>
+      <p>At your scheduled time, Luna calls you directly. She's already pulled your chart and is ready to guide you through it.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Deep Personal Reading</h3>
+      <p>Ask anything — love, career, timing, compatibility. Luna gives you specific, chart-based insights in real conversation.</p>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT TO EXPECT -->
+<div class="section">
+  <div class="section-head">
+    <h2>What Luna Covers</h2>
+    <p>Every reading is uniquely yours</p>
+  </div>
+  <div class="expect-grid">
+    <div class="expect-card">
+      <h4>☉ Your Big Three</h4>
+      <p>Sun, Moon, and Rising sign — the foundation of who you are, how you feel, and how the world sees you.</p>
+    </div>
+    <div class="expect-card">
+      <h4>♡ Love & Relationships</h4>
+      <p>Venus placement, 7th house insights, and compatibility patterns. Understand your love language at a cosmic level.</p>
+    </div>
+    <div class="expect-card">
+      <h4>💼 Career & Purpose</h4>
+      <p>Midheaven, North Node, and current transits that illuminate your professional path and life mission.</p>
+    </div>
+    <div class="expect-card">
+      <h4>🌊 Current Transits</h4>
+      <p>What's happening in the sky RIGHT NOW and how it specifically affects your chart this week, month, and year.</p>
+    </div>
+    <div class="expect-card">
+      <h4>🔮 Your Questions</h4>
+      <p>Ask Luna anything. She'll pull the relevant planets, houses, and transits to give you a grounded, specific answer.</p>
+    </div>
+    <div class="expect-card">
+      <h4>💫 She Remembers You</h4>
+      <p>Call back anytime. Luna remembers your chart, your questions, and your journey — building on each reading.</p>
+    </div>
+  </div>
+</div>
+
+<!-- BOOKING FORM -->
+<div class="section" id="book">
+  <div class="section-head">
+    <h2>Book Your Reading</h2>
+    <p>Enter your details and we'll connect you with Luna</p>
+  </div>
+
+  <div class="booking-form">
+    <div class="form-group">
+      <label>Your Name</label>
+      <input type="text" placeholder="First name" id="name" required>
+    </div>
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="tel" placeholder="+1 (555) 000-0000" id="phone" required>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" placeholder="you@email.com" id="email" required>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label>Date of Birth</label>
+        <input type="date" id="dob" required>
+      </div>
+      <div class="form-group">
+        <label>Time of Birth</label>
+        <input type="time" id="tob">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>City of Birth</label>
+      <input type="text" placeholder="e.g., Phoenix, AZ" id="city" required>
+    </div>
+
+    <div class="form-group">
+      <label>Reading Length</label>
+      <select id="plan">
+        <option value="15min">15 Minutes — $29.99</option>
+        <option value="30min" selected>30 Minutes — $49.99 (Best Value)</option>
+        <option value="60min">60 Minutes — $79.99</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>What would you like to focus on?</label>
+      <select id="focus">
+        <option value="general">General Reading (Let Luna guide me)</option>
+        <option value="love">Love & Relationships</option>
+        <option value="career">Career & Purpose</option>
+        <option value="timing">Timing & Decisions</option>
+        <option value="compatibility">Compatibility with Someone</option>
+        <option value="year">Year Ahead Forecast</option>
+      </select>
+    </div>
+
+    <button class="btn-book" onclick="bookReading()">Book & Pay — Connect with Luna</button>
+    <p class="form-note">🔒 Secure payment. Cancel or reschedule anytime. 100% satisfaction guaranteed.</p>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div class="section">
+  <div class="section-head">
+    <h2>What Callers Say</h2>
+    <p>Real experiences from real readings</p>
+  </div>
+  <div class="testimonials">
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <blockquote>"I was skeptical, but Luna knew things about me that I've never told anyone. She described my relationship pattern perfectly and gave me real advice based on my actual chart. I've called back three times."</blockquote>
+      <div class="name">— Mia K.</div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <blockquote>"The fact that she remembered me from my last call blew my mind. She picked up right where we left off and told me about a transit I should watch this month. It came true."</blockquote>
+      <div class="name">— David R.</div>
+    </div>
+    <div class="testimonial">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Way better than those generic horoscope apps. Luna actually uses your birth time and location. She explained why I always clash with Virgos and it finally made sense. Worth every dollar."</blockquote>
+      <div class="name">— Taylor S.</div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section">
+  <div class="section-head">
+    <h2>Frequently Asked</h2>
+  </div>
+  <div class="faq-item">
+    <h4>What if I don't know my birth time?</h4>
+    <p>No problem! Luna can still read your chart using noon as a default. Sun sign, planets, and most aspects will be accurate. Only the Rising sign and house placements may shift slightly. Many of our callers don't know their exact time and still get incredible readings.</p>
+  </div>
+  <div class="faq-item">
+    <h4>How is this different from a horoscope app?</h4>
+    <p>Luna uses your EXACT birth chart — not just your sun sign. She calculates precise planetary positions, house placements, aspects, and current transits specific to you. Then she talks to you about it in a real conversation where you can ask questions, go deeper, and get specific answers.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Can I ask specific questions?</h4>
+    <p>Absolutely. Ask about love, career, timing, compatibility, or anything else. Luna will pull the relevant planets and transits from your chart and give you a specific, grounded answer.</p>
+  </div>
+  <div class="faq-item">
+    <h4>What if I call back later?</h4>
+    <p>Luna remembers you. She'll greet you by name, reference your previous reading, and build on what you've already discussed. No need to re-explain anything — she picks up right where you left off.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Is my information private?</h4>
+    <p>100%. Your birth data and call transcripts are encrypted and never shared with anyone. Your reading is between you and Luna.</p>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="section" style="text-align: center;">
+  <h2 style="font-size: 34px; margin-bottom: 15px;">The Stars Have Something to Tell You</h2>
+  <p style="color: var(--lavender); font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; margin-bottom: 30px;">Your cosmic blueprint is waiting. All you have to do is pick up the phone.</p>
+  <a href="#book" class="btn-book" style="display:inline-block; max-width:300px;">Book Your Reading Now</a>
+</div>
+
+<footer>
+  <div class="brand">SOULEORA</div>
+  <p class="copy">© 2026 Souleora. All rights reserved. Readings are for entertainment and personal reflection.</p>
+</footer>
+
+<script>
+let selectedPlan = '30min';
+
+function selectPlan(el, plan) {
+  document.querySelectorAll('.price-option').forEach(p => p.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedPlan = plan;
+  document.getElementById('plan').value = plan;
+}
+
+function bookReading() {
+  const data = {
+    name: document.getElementById('name').value,
+    phone: document.getElementById('phone').value,
+    email: document.getElementById('email').value,
+    dob: document.getElementById('dob').value,
+    tob: document.getElementById('tob').value,
+    city: document.getElementById('city').value,
+    plan: document.getElementById('plan').value,
+    focus: document.getElementById('focus').value
+  };
+  
+  if (!data.name || !data.phone || !data.dob || !data.city) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  // TODO: Connect to Stripe payment + Vapi call scheduling
+  alert('Thank you, ' + data.name + '! Your reading is being scheduled. Luna will call you shortly at ' + data.phone + '.');
+}
+</script>
+
+</body>
+</html>
