@@ -1,13 +1,218 @@
-ID,Status,Campaign,Ad Set,Hook Type,Primary Text (Copy),Headline,Description,CTA,Creative Type,Date Launched,Date Killed,Days Active,Spend,Impressions,Clicks,CTR %,CPC,Leads,CPL,Purchases,Revenue,ROAS,CPA,Link Clicks,Landing Page Views,Conv Rate %,Relevance Score,Frequency,CPM,Thumbstop Rate %,Hold Rate %,Notes,Score
-S001,🟢 Winner,Souleora - TOF,Interest - Astrology,Curiosity,"Your birth chart reveals why you keep attracting the same type of person. Most people never look at their Venus placement — but it explains everything.",Discover What Your Stars Say About You,Personalized astrology reading based on YOUR exact birth chart,Book Now,Video - Avatar,,,0,,,,,,,,,,,,,,,,,,,0
-S002,🟡 Testing,Souleora - TOF,Interest - Spiritual,Pain Point,"I spent $200 on a psychic who told me generic nonsense. Then I found an AI astrologer that actually knew my birth chart — and she was RIGHT.",Stop Wasting Money on Fake Psychics,Luna uses real astronomical data to read your chart live over the phone,Try It Now,Video - UGC,,,0,,,,,,,,,,,,,,,,,,,0
-S003,🟡 Testing,Souleora - TOF,Lookalike 1%,Social Proof,"My friend bought me a birth chart reading as a gift and I literally cried. It described my relationship pattern so perfectly I screenshot it and sent it to my therapist.",The Gift They'll Never Forget,Personalized cosmic readings starting at $14.99,Shop Now,Image - Testimonial,,,0,,,,,,,,,,,,,,,,,,,0
-S004,⬜ Draft,,,Scarcity,"Mercury retrograde starts next week. If you don't know how it hits YOUR chart specifically, you're flying blind. Get your personalized transit reading before it's too late.",Know Before Mercury Retrograde Hits,Don't get blindsided — get your personalized transit report,Get Protected,,,,0,,,,,,,,,,,,,,,,,,,0
-S005,⬜ Draft,,,Question,"What if everything you thought you knew about your zodiac sign was only 1/3 of the story? Your Sun sign is just the surface. Your Moon and Rising tell the real truth.",You're More Than Your Sun Sign,Discover your full Big Three and what they really mean,Learn More,,,,0,,,,,,,,,,,,,,,,,,,0
-S006,⬜ Draft,,,Transformation,"6 months ago I was stuck in a toxic situationship. Then Luna told me my Venus was in my 12th house and suddenly EVERYTHING made sense. I finally understood why I kept choosing unavailable people.",She Told Me Why I Keep Choosing Wrong,AI-powered astrology that actually explains your love patterns,Book a Reading,,,,0,,,,,,,,,,,,,,,,,,,0
-S007,⬜ Draft,,,Authority,"We've done 10,000+ readings. The #1 thing people say after? 'How did you know that about me?' Your birth chart doesn't lie.",10000+ Readings and Counting,Join thousands who discovered their cosmic blueprint,See Your Chart,,,,0,,,,,,,,,,,,,,,,,,,0
-S008,⬜ Draft,,,Novelty,"I just had a phone call with an AI astrologer and she knew more about me than my best friend. She pulled my birth chart LIVE and walked me through every detail. This is the future.",Talk to an AI Astrologer Live,Luna calls you and reads your birth chart in real conversation,Book Your Call,,,,0,,,,,,,,,,,,,,,,,,,0
-S009,⬜ Draft,,,FOMO,"Everyone's getting their birth chart read and finding out stuff about themselves they never knew. Meanwhile you're still reading your generic horoscope in the morning like it means something.",Your Horoscope App is Lying to You,Generic sun sign readings miss 90% of your chart. Get the real thing.,Get Your Real Reading,,,,0,,,,,,,,,,,,,,,,,,,0
-S010,⬜ Draft,,,Gift,"Still don't know what to get for Mother's Day? A personalized birth chart reading. It's like giving someone a mirror to their soul. She'll cry. Trust me.",The Gift That Made Her Cry (Happy Tears),Personalized cosmic reading — the most thoughtful gift you'll ever give,Gift a Reading,,,,0,,,,,,,,,,,,,,,,,,,0
-S011,⬜ Draft,,,Lifestyle,"POV: You just found out your Mars is in Taurus and suddenly your entire work style makes sense. This is what a real birth chart reading does.",POV: Your Birth Chart Just Called You Out,Finally understand why you are the way you are,Get Called Out,,,,0,,,,,,,,,,,,,,,,,,,0
-S012,⬜ Draft,,,Comparison,"Horoscope apps give you the same reading as 500 million other people with your sign. Luna gives you a reading based on the EXACT minute and location you were born. Huge difference.",Same Sign Different Chart,Your birth chart is as unique as your fingerprint. Read it.,Read Your Chart,,,,0,,,,,,,,,,,,,,,,,,,0
+SOULEORA — META ADS COPY TRACKER,,,,,,,,,,,,,,,,,,,,,,,,,
+Updated:,2026-04-17,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+STATUS KEY:,,,,,HOOK TYPES:,,,,,CREATIVE TYPES:,,,,,,,,,,,,,,
+🟢 Winner — Scale this,,,,,"Curiosity — Open a loop, make them need to know",,,,,"Video - Avatar",,,,,,,,,,,,,,
+🟡 Testing — Collecting data,,,,,"Pain Point — Call out a frustration they feel",,,,,"Video - UGC",,,,,,,,,,,,,,
+🔴 Killed — Did not perform,,,,,"Social Proof — Testimonial, results, numbers",,,,,"Video - B-Roll",,,,,,,,,,,,,,
+⬜ Draft — Not launched yet,,,,,"Scarcity — Limited time, urgency, deadlines",,,,,"Image - Static",,,,,,,,,,,,,,
+🔵 Paused — Revisit later,,,,,"Question — Make them think",,,,,"Image - Carousel",,,,,,,,,,,,,,
+,,,,,"Transformation — Before/after story",,,,,"Image - Testimonial",,,,,,,,,,,,,,
+,,,,,"Authority — Credibility, numbers, trust",,,,,"Reels/Story",,,,,,,,,,,,,,
+,,,,,"Novelty — New, different, first-of-its-kind",,,,,,,,,,,,,,,,,,,,
+,,,,,"FOMO — Everyone else is doing it",,,,,,,,,,,,,,,,,,,,
+,,,,,"Gift — Perfect for someone else",,,,,,,,,,,,,,,,,,,,
+,,,,,"Lifestyle — POV, aesthetic, identity",,,,,,,,,,,,,,,,,,,,
+,,,,,"Comparison — Us vs them",,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+=== AD COPY LOG ===,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,
+ID,Status,Campaign,Ad Set,Audience,Hook Type,Angle/Theme,Primary Text,Headline,Description,CTA Button,Creative Type,Creative Link,Date Created,Date Launched,Date Killed,Days Active,Notes
+S001,🟢 Winner,Souleora - TOF,Interest - Astrology,Women 25-45 interested in astrology + spirituality,Curiosity,Venus placement + attraction patterns,"Your birth chart reveals why you keep attracting the same type of person.
+
+Most people only know their Sun sign. But your Venus placement? That's where the REAL story is.
+
+It explains:
+→ Why you're drawn to certain people
+→ Why past relationships followed the same pattern  
+→ What kind of love actually works for YOUR chart
+
+I got my Venus reading and it literally described my ex to a T. I wish I had this 5 years ago.
+
+Get your personalized birth chart reading — it takes 2 minutes to order and you'll understand yourself in a way no horoscope app ever could.
+
+🔮 Over 10,000 readings delivered. Rated 4.9/5.",Discover What Your Stars Say About You,Personalized astrology reading based on YOUR exact birth chart and time of birth,Book Now,Video - Avatar,,2026-04-15,2026-04-15,,12,Strong hook. Venus angle resonates with women 25-35. Test against S005.
+S002,🟡 Testing,Souleora - TOF,Interest - Spiritual,Women 22-40 spiritual + self-help,Pain Point,Fake psychic vs real astrology,"I spent $200 on a psychic reading last year.
+
+She told me I was ""going through a transition"" and that ""love was coming."" Wow. Groundbreaking. 🙄
+
+Then my friend sent me a link to this AI astrologer called Luna. I figured why not.
+
+Luna pulled up my ACTUAL birth chart using my exact birth time and location. She told me my Saturn was sitting on my 7th house and that's why my relationships always feel like work. She told me my Mars in Gemini is why I get bored fast.
+
+She wasn't vague. She wasn't generic. She was specific. And she was right.
+
+The difference between a real birth chart reading and a generic psychic? One uses actual astronomical data. The other uses guessing.
+
+Try Luna. Seriously.",Stop Wasting Money on Fake Psychics,Luna uses real NASA-level astronomical data to read your chart live over the phone,Try It Now,Video - UGC,,2026-04-16,2026-04-16,,1,Longer copy — testing against shorter version. Monitor CTR vs S001.
+S003,🟡 Testing,Souleora - TOF,Lookalike 1%,Lookalike of purchasers,Social Proof,Gift testimonial — made her cry,"My friend bought me a birth chart reading as a gift and I literally cried.
+
+It described my relationship pattern so perfectly that I screenshot it and sent it to my therapist. She said ""whoever wrote this knows you really well.""
+
+Nobody wrote it. It was generated from my birth chart — my exact date, time, and city of birth.
+
+It told me things about myself that took me years of therapy to figure out. And it cost less than one therapy session.
+
+If you want to give someone a gift that actually MEANS something — not another candle or gift card — this is it.
+
+They'll text you after. Trust me.
+
+✨ Personalized cosmic readings starting at $14.99",The Gift They Will Never Forget,Personalized birth chart reading — the most thoughtful gift you'll ever give,Shop Now,Image - Testimonial,,2026-04-16,2026-04-16,,1,Testing gift angle for broader appeal. Monitor share rate.
+S004,⬜ Draft,,,,Scarcity,Mercury retrograde timing,"Mercury retrograde starts next week.
+
+If you don't know how it hits YOUR chart specifically, you're flying blind.
+
+Mercury retrograde doesn't affect everyone the same way. It depends on which house Mercury rules in your chart, what sign it's retrograding through, and whether it's hitting any of your natal planets.
+
+For some people it's a minor inconvenience. For others it can flip their whole world upside down.
+
+Before it starts, get your personalized transit reading. Know exactly what to expect, what to avoid, and where the opportunities are hiding.
+
+Don't find out the hard way. Find out from your chart.
+
+🌙 Personalized Mercury retrograde readings — delivered in minutes.",Know Before Mercury Retrograde Hits,Personalized transit reading so you're prepared not surprised,Get Protected,,,2026-04-17,,,,Seasonal angle — launch 1 week before any retrograde period.
+S005,⬜ Draft,,,,Question,Big Three education — you're more than your Sun sign,"What if everything you thought you knew about your zodiac sign was only 1/3 of the story?
+
+Your Sun sign is just the beginning. It's your ego, your identity.
+
+Your Moon sign? That's your emotional core. The part of you that comes out at 2am when you can't sleep.
+
+Your Rising sign? That's your mask. How the world sees you before they really know you.
+
+Together they tell a story that no daily horoscope will ever capture.
+
+When I found out my Moon was in Scorpio, suddenly my entire emotional life made sense. Years of intensity, jealousy, depth that I couldn't explain — it was written in my chart the whole time.
+
+Want to know YOUR Big Three and what they actually mean?
+
+It takes 2 minutes. Enter your birth details and we'll send you a reading that's actually about YOU.",You're More Than Just Your Sun Sign,Discover your Moon and Rising signs — the parts of you that horoscopes miss,Learn More,,,2026-04-17,,,,Educational hook — works for people new to astrology. Lower intent but higher volume.
+S006,⬜ Draft,,,,Transformation,Situationship healing through Venus/12th house,"6 months ago I was stuck in a toxic situationship.
+
+You know the kind. Hot and cold. Breadcrumbs. ""I'm not ready for a relationship"" but also ""don't talk to anyone else.""
+
+I was so confused about why I kept choosing people like this. My friends were tired of hearing about it. I was tired of living it.
+
+Then I talked to Luna. She pulled up my chart and said: ""Your Venus is in your 12th house. You're literally wired to fall for people who are emotionally unavailable because deep down you confuse love with longing.""
+
+I was SHOOK.
+
+She didn't just tell me what was wrong — she showed me what my chart says about the kind of love that actually works for me. The sign, the house, the timing.
+
+I'm now 3 months into the healthiest relationship of my life. And it started with understanding my chart.
+
+If you're stuck in a pattern, maybe the answer isn't another dating app. Maybe it's your birth chart.",She Told Me Why I Keep Choosing Wrong,AI-powered astrology that explains your love patterns with scary accuracy,Book a Reading,,,2026-04-17,,,,Transformation story — HIGH emotion. Test as video with voiceover.
+S007,⬜ Draft,,,,Authority,10k readings social proof,"We've done over 10,000 readings.
+
+The #1 thing people say after?
+
+""How did you know that about me?""
+
+We didn't know. Your birth chart knew.
+
+We just translated it.
+
+Every reading uses your exact birth date, time, and location to calculate precise planetary positions. No guessing. No cold reading. No generic horoscope stuff.
+
+Just your chart. Interpreted by an AI trained on thousands of astrological frameworks.
+
+The second most common thing people say?
+
+""Why didn't I do this sooner?""
+
+Good question. Why haven't you?
+
+🔮 Join 10,000+ people who discovered their cosmic blueprint.",Your Birth Chart Doesn't Lie,Over 10k readings delivered with a 4.9 star rating,See Your Chart,,,2026-04-17,,,,Short punchy paragraphs. Authority + curiosity. Good for retargeting.
+S008,⬜ Draft,,,,Novelty,AI astrologer phone call — the future,"I just had a phone call with an AI astrologer.
+
+Yes, a phone call. With an AI. About my birth chart.
+
+Before you judge — she knew more about me than my best friend.
+
+She pulled my chart LIVE during the call. She told me about my Saturn return and why the last 2 years have felt so heavy. She explained my Mars placement and why I self-sabotage when things are going well.
+
+And when I asked about my love life? She didn't give me some generic ""love is coming"" answer. She said ""your Venus in Capricorn in the 5th house means you need someone who takes romance seriously and shows love through consistency, not grand gestures.""
+
+I literally grabbed a pen and started taking notes.
+
+This is what astrology is supposed to be. Not a paragraph in a magazine. A real conversation about YOUR chart.
+
+Book a call with Luna. The future of astrology is already here.",Talk to an AI Astrologer Live on the Phone,Luna calls you and reads your birth chart in real conversation — like talking to a friend who's psychic,Book Your Call,,,2026-04-17,,,,Novelty + specific details. Best for awareness campaigns.
+S009,⬜ Draft,,,,FOMO,Everyone's doing it — generic horoscope diss,"Your daily horoscope says ""today is a good day for communication.""
+
+You and 500 million other Geminis apparently.
+
+Meanwhile, people are getting birth chart readings that tell them EXACTLY what's happening in their specific chart this week. What planet is hitting what house. When the energy shifts. What decisions to make and when.
+
+The difference between a horoscope and a birth chart reading is like the difference between a fortune cookie and a personal letter.
+
+One is mass-produced. The other is made specifically for you.
+
+Your birth chart has never been read by anyone else because no one else was born at your exact time in your exact location. It's literally a fingerprint of the sky at the moment you arrived.
+
+Stop reading fortune cookies. Read YOUR chart.
+
+Takes 2 minutes to order. Delivered to your email.",Your Horoscope App Is Lying to You,Generic sun sign readings miss 90% of your chart — get the real thing,Get the Real Thing,,,2026-04-17,,,,Diss track on horoscope apps. Edgy. Test with younger demo 18-28.
+S010,⬜ Draft,,,,Gift,Mother's Day personalized gift,"Still don't know what to get for Mother's Day?
+
+A personalized birth chart reading.
+
+It's like giving someone a mirror to their soul. 40+ pages about who they really are — their strengths, their challenges, their love language, their life purpose.
+
+Every word is specific to their exact birth chart. No two readings are alike.
+
+The last mom who got one texted her daughter: ""I don't know how this knows me better than I know myself.""
+
+Starting at $14.99. Delivered to your email in minutes. Print it, frame it, or send it as a digital gift.
+
+Way better than flowers.
+
+✨ Order by May 10 for guaranteed Mother's Day delivery.",The Gift That Made Her Cry (Happy Tears),Personalized cosmic reading — more thoughtful than anything you'll find on Amazon,Gift a Reading,,,2026-04-17,,,,SEASONAL — launch 2-3 weeks before Mother's Day. Swap for Father's Day / Christmas.
+S011,⬜ Draft,,,,Lifestyle,POV Mars in Taurus work style realization,"POV: You just found out your Mars is in Taurus and suddenly your entire work style makes sense.
+
+The slow starts. The stubbornness once you commit. The need to see tangible results before you believe something is working.
+
+You're not lazy. You're not ""resistant to change."" Your Mars literally operates on a different timeline than most people's.
+
+Once I understood my Mars placement I stopped beating myself up for not being a ""hustle culture"" person. I started working WITH my chart instead of against it.
+
+Productivity tripled. Stress cut in half. Not because I changed who I am — because I finally understood who I am.
+
+Want to know what your Mars says about your drive, your ambition, and your work style?
+
+2 minutes. Enter your birth details. Mind = blown.",Your Birth Chart Just Called You Out,Finally understand why you are the way you are — it's in your chart,Get Called Out,,,2026-04-17,,,,Lifestyle/identity angle. Works well as Reel or Story format.
+S012,⬜ Draft,,,,Comparison,Generic horoscope vs real birth chart — side by side,"GENERIC HOROSCOPE:
+""Pisces, this week focus on communication and self-care.""
+
+YOUR ACTUAL BIRTH CHART:
+""Your natal Mercury in Aries in the 3rd house is being activated by transiting Jupiter, creating a 6-week window where your ideas have unusual power. If you've been sitting on a project, pitch it now. This transit won't come back for 12 years.""
+
+See the difference?
+
+One tells you nothing. The other tells you everything.
+
+Your birth chart is calculated from the exact minute you were born and the exact coordinates of where you were born. It's a map of the sky that has never existed before and will never exist again.
+
+And it has answers to questions you haven't even thought to ask yet.
+
+Stop reading your horoscope. Start reading your chart.",Same Sign. Completely Different Chart.,Your birth chart is as unique as your fingerprint. Time to actually read it.,Read Your Chart,,,2026-04-17,,,,Direct comparison — visual side-by-side works well as image or carousel.
+,,,,,,,,,,,,,,,,,,,
+=== PERFORMANCE TRACKING ===,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+ID,Spend,Impressions,Reach,Clicks,CTR %,CPC,Link Clicks,Landing Views,View Rate %,Leads,CPL,Purchases,Revenue,ROAS,CPA,Conv Rate %,Frequency,CPM,3-sec Views,Thumbstop %,Hold Rate %,Shares,Saves,Comments
+S001,,,,,,,,,,,,,,,,,,,,,,,,
+S002,,,,,,,,,,,,,,,,,,,,,,,,
+S003,,,,,,,,,,,,,,,,,,,,,,,,
+S004,,,,,,,,,,,,,,,,,,,,,,,,
+S005,,,,,,,,,,,,,,,,,,,,,,,,
+S006,,,,,,,,,,,,,,,,,,,,,,,,
+S007,,,,,,,,,,,,,,,,,,,,,,,,
+S008,,,,,,,,,,,,,,,,,,,,,,,,
+S009,,,,,,,,,,,,,,,,,,,,,,,,
+S010,,,,,,,,,,,,,,,,,,,,,,,,
+S011,,,,,,,,,,,,,,,,,,,,,,,,
+S012,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+=== WINNING COPY ARCHIVE ===,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,
+ID,Hook Type,Primary Text,Best Metric,Peak ROAS,Total Revenue,Why It Worked,Variation Ideas
+(move winners here for reference),,,,,,,,
