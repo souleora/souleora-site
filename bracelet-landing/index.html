@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soul Bracelets — Souleora | Personalized Zodiac Jewelry</title>
+  <meta name="description" content="Discover your personalized zodiac Soul Bracelet. Crafted for your star sign, infused with intention. $29.99 — was $49.00.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #C9A96E;
+      --gold-light: #E8D5A8;
+      --dark: #0D0D0D;
+      --darker: #080808;
+      --text: #E8E0D0;
+      --text-muted: #9A9080;
+      --accent: #8B6914;
+      --gradient-gold: linear-gradient(135deg, #C9A96E 0%, #E8D5A8 50%, #C9A96E 100%);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--darker);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* Stars background */
+    .stars {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .star {
+      position: absolute;
+      width: 2px; height: 2px;
+      background: rgba(255,255,255,0.6);
+      border-radius: 50%;
+      animation: twinkle var(--dur) ease-in-out infinite alternate;
+    }
+    @keyframes twinkle {
+      from { opacity: 0.2; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1.2); }
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      z-index: 1;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 50% 30%, rgba(201,169,110,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-badge {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 0.75rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 1s ease forwards 0.3s;
+    }
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.5rem, 7vw, 5.5rem);
+      font-weight: 300;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 1s ease forwards 0.5s;
+    }
+    .hero h1 span {
+      background: var(--gradient-gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 600;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 500px;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 1s ease forwards 0.7s;
+    }
+    .hero-price {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeUp 1s ease forwards 0.9s;
+    }
+    .price-current {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--gold);
+    }
+    .price-was {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+    .price-save {
+      background: rgba(201,169,110,0.15);
+      color: var(--gold);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 18px 48px;
+      background: var(--gradient-gold);
+      color: var(--dark);
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      opacity: 0;
+      animation: fadeUp 1s ease forwards 1.1s;
+    }
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(201,169,110,0.3);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Section base */
+    section {
+      position: relative;
+      z-index: 1;
+      padding: 5rem 2rem;
+    }
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .section-title span {
+      background: var(--gradient-gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 600;
+    }
+    .section-sub {
+      text-align: center;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      line-height: 1.6;
+    }
+
+    /* Zodiac Grid */
+    .zodiac-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .zodiac-card {
+      position: relative;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(201,169,110,0.12);
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+    .zodiac-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(201,169,110,0.4);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    }
+    .zodiac-card.selected {
+      border-color: var(--gold);
+      box-shadow: 0 0 30px rgba(201,169,110,0.2);
+    }
+    .zodiac-card.selected::after {
+      content: '✓';
+      position: absolute;
+      top: 12px; right: 12px;
+      width: 28px; height: 28px;
+      background: var(--gold);
+      color: var(--dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      z-index: 2;
+    }
+    .zodiac-img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+    }
+    .zodiac-info {
+      padding: 1.2rem;
+    }
+    .zodiac-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+    }
+    .zodiac-dates {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+    .zodiac-price-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .zodiac-price {
+      font-weight: 600;
+      color: var(--gold);
+      font-size: 1.1rem;
+    }
+    .zodiac-was {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-decoration: line-through;
+    }
+
+    /* Features */
+    .features {
+      background: rgba(201,169,110,0.03);
+      border-top: 1px solid rgba(201,169,110,0.08);
+      border-bottom: 1px solid rgba(201,169,110,0.08);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .feature {
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .feature h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      margin-bottom: 0.5rem;
+    }
+    .feature p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Reviews */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .review {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(201,169,110,0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .review-stars {
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+    }
+    .review p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      font-style: italic;
+    }
+    .review-author {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .review-badge {
+      font-size: 0.7rem;
+      color: var(--gold);
+      background: rgba(201,169,110,0.1);
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-left: 8px;
+    }
+
+    /* CTA Bottom */
+    .cta-bottom {
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .cta-bottom .cta-button {
+      opacity: 1;
+      animation: none;
+    }
+
+    /* Sticky Buy Bar */
+    .buy-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0; right: 0;
+      background: rgba(8,8,8,0.95);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(201,169,110,0.2);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      z-index: 100;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+    }
+    .buy-bar.visible { transform: translateY(0); }
+    .buy-bar-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      color: var(--text);
+    }
+    .buy-bar-text strong { color: var(--gold); }
+    .buy-bar .cta-button {
+      opacity: 1;
+      animation: none;
+      padding: 12px 32px;
+      font-size: 0.85rem;
+    }
+
+    /* Success/Cancel overlay */
+    .overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+    .overlay-box {
+      background: var(--dark);
+      border: 1px solid rgba(201,169,110,0.3);
+      border-radius: 20px;
+      padding: 3rem;
+      text-align: center;
+      max-width: 480px;
+    }
+    .overlay-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .overlay-box h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      color: var(--gold-light);
+      margin-bottom: 0.75rem;
+    }
+    .overlay-box p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid rgba(201,169,110,0.08);
+      position: relative;
+      z-index: 1;
+      padding-bottom: 6rem;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+
+    /* Loading state on buttons */
+    .cta-button.loading {
+      pointer-events: none;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 600px) {
+      .zodiac-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+      .zodiac-info { padding: 0.8rem; }
+      .zodiac-name { font-size: 1.1rem; }
+      .buy-bar { flex-direction: column; gap: 0.5rem; padding: 0.75rem 1rem; }
+      .buy-bar-text { font-size: 1rem; }
+      .reviews-grid { grid-template-columns: 1fr; }
+    }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <!-- Stars -->
+  <div class="stars" id="stars"></div>
+
+  <!-- Success Overlay -->
+  <div class="overlay hidden" id="success-overlay">
+    <div class="overlay-box">
+      <div class="overlay-icon">✨</div>
+      <h2>Order Confirmed!</h2>
+      <p>Your Soul Bracelet is on its way. The universe has aligned — expect magic in your mailbox soon.</p>
+      <a href="https://souleora.com" class="cta-button" style="opacity:1;animation:none;">Visit Souleora</a>
+    </div>
+  </div>
+
+  <!-- Cancel Overlay -->
+  <div class="overlay hidden" id="cancel-overlay">
+    <div class="overlay-box">
+      <div class="overlay-icon">🌙</div>
+      <h2>No rush</h2>
+      <p>Your bracelet will be here when you're ready. The stars aren't going anywhere.</p>
+      <button class="cta-button" style="opacity:1;animation:none;" onclick="document.getElementById('cancel-overlay').classList.add('hidden')">Continue Browsing</button>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-badge">Souleora — Soul Collection</div>
+    <h1>Your Star Sign.<br><span>Your Soul Bracelet.</span></h1>
+    <p class="hero-sub">Handcrafted zodiac bracelets infused with the energy of your star sign. A gift from the cosmos, made just for you.</p>
+    <div class="hero-price">
+      <span class="price-current">$29.99</span>
+      <span class="price-was">$49.00</span>
+      <span class="price-save">Save 39%</span>
+    </div>
+    <a href="#choose" class="cta-button">Choose Your Sign</a>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">✦</div>
+        <h3>Personalized</h3>
+        <p>Each bracelet is crafted to embody the unique qualities of your zodiac sign.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🌙</div>
+        <h3>Intention-Set</h3>
+        <p>Designed with positive energy and manifestation in mind.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🎁</div>
+        <h3>Perfect Gift</h3>
+        <p>The gift they will never forget — meaningful, personal, beautiful.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🚚</div>
+        <h3>Free Shipping</h3>
+        <p>Delivered to your door with love and care. US, CA, UK, AU.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Choose Sign -->
+  <section id="choose">
+    <h2 class="section-title">Choose Your <span>Sign</span></h2>
+    <p class="section-sub">Select your zodiac sign below, then tap Buy to complete your order through our secure checkout.</p>
+    <div class="zodiac-grid" id="zodiac-grid"></div>
+  </section>
+
+  <!-- Reviews -->
+  <section>
+    <h2 class="section-title">What People <span>Say</span></h2>
+    <p class="section-sub">Real customers, real energy.</p>
+    <div class="reviews-grid">
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p>"I got the Scorpio bracelet for my sister and she literally cried. The quality is amazing and it feels so personal."</p>
+        <span class="review-author">— Jessica M.<span class="review-badge">Verified Buyer</span></span>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p>"I wear my Leo bracelet every day. I swear it brings me good energy. People always ask about it."</p>
+        <span class="review-author">— Marcus T.<span class="review-badge">Verified Buyer</span></span>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <p>"Bought two for my best friends. They loved them! Shipping was fast and the packaging was beautiful."</p>
+        <span class="review-author">— Alana R.<span class="review-badge">Verified Buyer</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Bottom -->
+  <div class="cta-bottom">
+    <h2 class="section-title" style="margin-bottom:1.5rem;">Ready to <span>Align</span>?</h2>
+    <button class="cta-button" id="buy-bottom" disabled>Select Your Sign Above ↑</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 <a href="https://souleora.com">Souleora</a>. All rights reserved. Crafted with ✦ and intention.</p>
+  </footer>
+
+  <!-- Sticky Buy Bar -->
+  <div class="buy-bar" id="buy-bar">
+    <span class="buy-bar-text">Your pick: <strong id="bar-sign">—</strong></span>
+    <button class="cta-button" id="bar-buy" disabled>Buy Now — $29.99</button>
+  </div>
+
+  <script>
+    // ---- STRIPE PAYMENT LINKS (live) ----
+    const paymentLinks = {
+      aries:       'https://buy.stripe.com/eVq28rdAy92pcOH3Pfe7m00',
+      taurus:      'https://buy.stripe.com/3cI4gz1RQfqNdSLgC1e7m01',
+      gemini:      'https://buy.stripe.com/00w00jbsq0vT7un2Lbe7m02',
+      cancer:      'https://buy.stripe.com/bJebJ1fIGdiF01V71re7m03',
+      leo:         'https://buy.stripe.com/7sY14n9kidiFdSLadDe7m04',
+      virgo:       'https://buy.stripe.com/4gM14n9kiceB7un4Tje7m05',
+      libra:       'https://buy.stripe.com/fZu8wP5422E115ZetTe7m06',
+      scorpio:     'https://buy.stripe.com/7sYcN5cwu3I5g0T85ve7m07',
+      sagittarius: 'https://buy.stripe.com/7sYfZhfIGa6tcOHadDe7m08',
+      capricorn:   'https://buy.stripe.com/dRm9ATfIG6Uh2a33Pfe7m09',
+      aquarius:    'https://buy.stripe.com/aFa7sL0NM6UhdSL5Xne7m0a',
+      pisces:      'https://buy.stripe.com/aFa14n7ca0vT6qj85ve7m0b',
+    };
+
+    // ---- ZODIAC DATA ----
+    const signs = [
+      { id: 'aries',       name: 'Aries',       dates: 'Mar 21 – Apr 19', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Aries_d834f183-6ef3-46c7-b36f-9f3b3f7c6c0b.jpg' },
+      { id: 'taurus',      name: 'Taurus',      dates: 'Apr 20 – May 20', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Taurus_ec0fb521-b060-4c7a-8db8-4c2b34fe300d.jpg' },
+      { id: 'gemini',      name: 'Gemini',      dates: 'May 21 – Jun 20', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Gemini_b1e49bf4-e28b-427d-925c-2c0a6b8f6f67.jpg' },
+      { id: 'cancer',      name: 'Cancer',      dates: 'Jun 21 – Jul 22', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Cancer_427b5689-81ab-49dc-a33e-7e3b5c0a8c72.jpg' },
+      { id: 'leo',         name: 'Leo',         dates: 'Jul 23 – Aug 22', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Leo_6662488e-7b22-4e9b-8912-8a0a3b6c5d18.jpg' },
+      { id: 'virgo',       name: 'Virgo',       dates: 'Aug 23 – Sep 22', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Virgo_4ac3731d-ac02-434e-b8e3-1c6367ad93a5.jpg' },
+      { id: 'libra',       name: 'Libra',       dates: 'Sep 23 – Oct 22', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Libra_42f4f44b-58b5-425c-b4e2-8d1a3c6f9e28.jpg' },
+      { id: 'scorpio',     name: 'Scorpio',     dates: 'Oct 23 – Nov 21', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Scorpio_e3a1cb42-7397-44b5-a62d-5c8b2f1d3e09.jpg' },
+      { id: 'sagittarius', name: 'Sagittarius', dates: 'Nov 22 – Dec 21', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Saggitarius_13902851-3339-4a7e-b8c5-1d6f2a8e4b37.jpg' },
+      { id: 'capricorn',   name: 'Capricorn',   dates: 'Dec 22 – Jan 19', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Capricorn_71627c1a-45ed-4a8b-9c3f-2e7d1b5a6f48.jpg' },
+      { id: 'aquarius',    name: 'Aquarius',    dates: 'Jan 20 – Feb 18', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Aquarius_9ae031f1-83c8-4d6e-b2a7-3f8c1d5e2a09.jpg' },
+      { id: 'pisces',      name: 'Pisces',      dates: 'Feb 19 – Mar 20', img: 'https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Pisces_c1cc0085-6cc2-4689-a8b3-4e2d1c7f3a56.jpg' },
+    ];
+
+    let selectedSign = null;
+
+    // ---- RENDER GRID ----
+    const grid = document.getElementById('zodiac-grid');
+    signs.forEach(s => {
+      const card = document.createElement('div');
+      card.className = 'zodiac-card';
+      card.dataset.sign = s.id;
+      card.innerHTML = `
+        <img class="zodiac-img" src="${s.img}" alt="${s.name} Soul Bracelet" loading="lazy">
+        <div class="zodiac-info">
+          <div class="zodiac-name">${s.name}</div>
+          <div class="zodiac-dates">${s.dates}</div>
+          <div class="zodiac-price-row">
+            <span class="zodiac-price">$29.99</span>
+            <span class="zodiac-was">$49.00</span>
+          </div>
+        </div>
+      `;
+      card.addEventListener('click', () => selectSign(s.id, s.name));
+      grid.appendChild(card);
+    });
+
+    // ---- SELECT SIGN ----
+    function selectSign(id, name) {
+      selectedSign = id;
+      document.querySelectorAll('.zodiac-card').forEach(c => c.classList.remove('selected'));
+      document.querySelector(`[data-sign="${id}"]`).classList.add('selected');
+
+      // Update buttons
+      const buyBottom = document.getElementById('buy-bottom');
+      buyBottom.disabled = false;
+      buyBottom.textContent = `Buy ${name} Bracelet — $29.99`;
+      buyBottom.onclick = () => checkout(id);
+
+      const barBuy = document.getElementById('bar-buy');
+      barBuy.disabled = false;
+      barBuy.onclick = () => checkout(id);
+      document.getElementById('bar-sign').textContent = name;
+    }
+
+    // ---- CHECKOUT (direct Stripe Payment Links — no backend needed) ----
+    function checkout(sign) {
+      const url = paymentLinks[sign];
+      if (url) {
+        window.location.href = url;
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    }
+
+    // ---- STICKY BAR ----
+    const buyBar = document.getElementById('buy-bar');
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting && selectedSign) buyBar.classList.add('visible');
+      else buyBar.classList.remove('visible');
+    }, { threshold: 0 });
+    observer.observe(document.getElementById('choose'));
+
+    // ---- STARS ----
+    const starsEl = document.getElementById('stars');
+    for (let i = 0; i < 80; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.setProperty('--dur', (2 + Math.random() * 4) + 's');
+      star.style.animationDelay = Math.random() * 4 + 's';
+      star.style.width = star.style.height = (1 + Math.random() * 2) + 'px';
+      starsEl.appendChild(star);
+    }
+
+    // ---- SUCCESS/CANCEL ----
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('success') === 'true') {
+      document.getElementById('success-overlay').classList.remove('hidden');
+    } else if (params.get('canceled') === 'true') {
+      document.getElementById('cancel-overlay').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
