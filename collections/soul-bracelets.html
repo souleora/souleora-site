@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soul Bracelets | Souleora</title>
+  <meta name="description" content="Zodiac-powered Soul Bracelets crafted with crystals and cosmic energy.">
+  <meta property="og:title" content="Soul Bracelets | Souleora">
+  <meta property="og:description" content="Zodiac-powered Soul Bracelets crafted with crystals and cosmic energy.">
+  <meta property="og:type" content="website">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '838447763992721');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=838447763992721&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GT-5789SN4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GT-5789SN4');
+</script>
+  <style>
+    
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #fffaf4;
+      --navy: #0e1b4d;
+      --navy-light: rgba(14,27,77,0.08);
+      --navy-border: rgba(14,27,77,0.15);
+      --gold: #c9a84c;
+      --text: #2c2c2c;
+      --radius: 1.8rem;
+      --font: 'Libre Baskerville', serif;
+    }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; height: auto; display: block; }
+
+    /* NAV */
+    .site-header {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--navy-border);
+      padding: 0 1.5rem;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-size: 1.5rem; font-weight: 700; color: var(--navy);
+      letter-spacing: 0.04em;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--navy); font-size: 0.9rem; letter-spacing: 0.05em;
+      text-transform: uppercase; font-weight: 600;
+      transition: opacity 0.2s;
+    }
+    .nav-links a:hover { opacity: 0.6; }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+    .nav-toggle span {
+      display: block; width: 24px; height: 2px; background: var(--navy);
+      margin: 5px 0; transition: 0.3s;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background: var(--navy); color: #fff;
+      padding: 3rem 1.5rem 1.5rem;
+      margin-top: 4rem;
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;
+    }
+    .footer-brand .footer-logo { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .footer-brand p { font-size: 0.85rem; opacity: 0.75; line-height: 1.6; }
+    .footer-links h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; opacity: 0.6; }
+    .footer-links ul { list-style: none; }
+    .footer-links ul li { margin-bottom: 0.5rem; }
+    .footer-links ul a { font-size: 0.9rem; opacity: 0.85; transition: opacity 0.2s; }
+    .footer-links ul a:hover { opacity: 1; }
+    .footer-subscribe h4 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1rem; opacity: 0.6; }
+    .footer-subscribe p { font-size: 0.85rem; opacity: 0.75; margin-bottom: 1rem; }
+    .subscribe-form { display: flex; gap: 0.5rem; }
+    .subscribe-form input {
+      flex: 1; padding: 0.6rem 0.8rem; border-radius: 2rem;
+      border: none; font-family: var(--font); font-size: 0.85rem;
+      background: rgba(255,255,255,0.15); color: #fff; outline: none;
+    }
+    .subscribe-form input::placeholder { color: rgba(255,255,255,0.5); }
+    .subscribe-form button {
+      padding: 0.6rem 1.2rem; border-radius: 2rem;
+      background: var(--gold); border: none; color: #fff;
+      font-family: var(--font); font-size: 0.85rem; cursor: pointer;
+      font-weight: 700; white-space: nowrap;
+    }
+    .footer-bottom {
+      max-width: 1200px; margin: 2rem auto 0;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 1.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.8rem; opacity: 0.6;
+    }
+
+    /* BUTTONS */
+    .btn-primary {
+      display: inline-block;
+      background: var(--navy); color: #fff;
+      padding: 0.85rem 2.2rem; border-radius: 2rem;
+      font-family: var(--font); font-size: 0.95rem;
+      font-weight: 700; letter-spacing: 0.05em;
+      cursor: pointer; border: none;
+      transition: background 0.2s, transform 0.15s;
+      text-align: center;
+    }
+    .btn-primary:hover { background: #1a2d6b; transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-block;
+      background: transparent; color: var(--navy);
+      padding: 0.75rem 1.8rem; border-radius: 2rem;
+      font-family: var(--font); font-size: 0.9rem;
+      font-weight: 600; border: 2px solid var(--navy);
+      cursor: pointer; transition: all 0.2s;
+    }
+    .btn-secondary:hover { background: var(--navy); color: #fff; }
+
+    /* PRODUCT CARDS */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--navy-border);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(14,27,77,0.12); }
+    .card-img-wrap {
+      padding: 1rem; background: #faf8f5;
+      aspect-ratio: 1/1;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .card-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover;
+      border-radius: 0.8rem;
+    }
+    .card-info { padding: 1rem 1.2rem 1.2rem; }
+    .card-title { font-size: 0.95rem; font-weight: 700; color: var(--navy); margin-bottom: 0.4rem; line-height: 1.3; }
+    .card-price { font-size: 0.9rem; color: var(--text); }
+    .card-price .compare { text-decoration: line-through; opacity: 0.5; margin-left: 0.4rem; font-size: 0.82rem; }
+    .card-price .sale { color: #c0392b; font-weight: 700; }
+
+    /* PAGE HEADER */
+    .page-hero {
+      background: linear-gradient(135deg, #f0e8ff 0%, #ffe8f0 50%, #e8f0ff 100%);
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    .page-hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); color: var(--navy); margin-bottom: 1rem; }
+    .page-hero p { font-size: 1.1rem; color: var(--text); opacity: 0.75; max-width: 600px; margin: 0 auto; }
+
+    /* SECTION */
+    .section { max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem; }
+    .section-title {
+      font-size: 1.8rem; color: var(--navy); margin-bottom: 0.5rem;
+      text-align: center;
+    }
+    .section-subtitle {
+      text-align: center; opacity: 0.65; margin-bottom: 2.5rem; font-size: 1rem;
+    }
+    .section-cta { text-align: center; margin-top: 2rem; }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .nav-links { display: none; flex-direction: column; gap: 0; }
+      .nav-links.open {
+        display: flex; position: absolute; top: 64px; left: 0; right: 0;
+        background: var(--bg); border-bottom: 1px solid var(--navy-border);
+        padding: 1rem 0;
+      }
+      .nav-links.open li { padding: 0.75rem 1.5rem; }
+      .nav-toggle { display: block; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+      .product-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    }
+    @media (max-width: 400px) {
+      .product-grid { grid-template-columns: 1fr; }
+    }
+    
+    
+.zodiac-nav { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+.zodiac-nav span { font-size: 1.5rem; cursor: pointer; transition: transform 0.2s; }
+.zodiac-nav span:hover { transform: scale(1.3); }
+.sb-intro { background: #fff; border-radius: var(--radius); padding: 1.5rem 2rem; margin-bottom: 2rem; border: 1px solid var(--navy-border); }
+.sb-intro p { font-size: 1rem; color: var(--text); line-height: 1.7; margin-bottom: 1rem; }
+.sb-features { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.sb-features span { font-size: 0.85rem; color: var(--navy); font-weight: 600; }
+
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">Souleora</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../collections/index.html">Collections</a></li>
+        <li><a href="../collections/soul-bracelets.html">Soul Bracelets</a></li>
+        <li><a href="mailto:hello@souleora.com">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="page-hero" style="background: linear-gradient(135deg, #e8e0ff 0%, #ffe8f0 50%, #e0f0ff 100%);">
+  <h1>✨ Soul Bracelets</h1>
+  <p>Find your zodiac's perfect bracelet — crafted with love, crystals, and cosmic energy</p>
+  <div class="zodiac-nav">
+    <span>♈</span><span>♉</span><span>♊</span><span>♋</span><span>♌</span><span>♍</span><span>♎</span><span>♏</span><span>♐</span><span>♑</span><span>♒</span><span>♓</span>
+  </div>
+</div>
+<div class="section">
+  <div class="sb-intro">
+    <p>Each Soul Bracelet is uniquely designed for your zodiac sign, featuring crystals and symbols that align with your energy. A perfect gift for yourself or someone you love. 💫</p>
+    <div class="sb-features">
+      <span>🔮 Zodiac Crystals</span>
+      <span>✋ Handcrafted</span>
+      <span>🌟 Energy Aligned</span>
+      <span>💌 Gift Ready</span>
+    </div>
+  </div>
+  <div class="product-grid"><a href="../products/virgo-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Virgo_4ac3731d-ac02-434e-b8e3-1c6367ad93a5.jpg?v=1770641614" alt="Virgo Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Virgo Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/taurus-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Taurus_ec0fb521-b060-4c7a-8db8-4c2b34fe300d.jpg?v=1770641613" alt="Taurus Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Taurus Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/scorpio-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Scorpio_e3a1cb42-7397-44b6-b035-cba53235e9d0.jpg?v=1770641611" alt="Scorpio Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Scorpio Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/sagittarius-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Saggitarius_13902851-3339-4e73-aa4f-b327df3f5fdf.jpg?v=1770641610" alt="Sagittarius Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Sagittarius Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/pisces-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Pisces_c1cc0085-6cc2-4689-9d31-46b45580a36a.jpg?v=1770641608" alt="Pisces Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Pisces Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/libra-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Libra_42f4f44b-58b5-425c-a3f9-4619d2600ef5.jpg?v=1770641607" alt="Libra Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Libra Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/leo-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Leo_6662488e-7b22-4e9b-8938-0a0196845cb4.jpg?v=1770641606" alt="Leo Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Leo Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/gemini-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Gemini_b1e49bf4-e28b-427d-90e2-796566c90416.jpg?v=1770641604" alt="Gemini Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Gemini Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/capricorn-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Capricorn_71627c1a-45ed-4c02-a492-ba32d51d9126.jpg?v=1770641602" alt="Capricorn Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Capricorn Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/cancer-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Cancer_427b5689-81ab-49dc-8d4f-a88da1fb326d.jpg?v=1770641599" alt="Cancer Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Cancer Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/aries-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Aries_d834f183-6ef3-46c7-9246-b6866fbec762.jpg?v=1770641598" alt="Aries Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Aries Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a>
+<a href="../products/aquarius-soul-bracelet.html" class="product-card">
+  <div class="card-img-wrap">
+    <img src="https://cdn.shopify.com/s/files/1/0802/2589/4636/files/Aquarius_9ae031f1-83c8-4d5c-8401-c5b04fe2d95b.jpg?v=1770641596" alt="Aquarius Soul Bracelet" loading="lazy">
+  </div>
+  <div class="card-info">
+    <div class="card-title">Aquarius Soul Bracelet</div>
+    <div class="card-price">
+      <span class="sale">$29.99</span><span class="compare">$49.00</span>
+    </div>
+  </div>
+</a></div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">Souleora ✨</div>
+      <p>Helping 10,000+ people Manifest their dream life. Spiritual jewelry crafted with intention.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="../collections/soul-bracelets.html">Soul Bracelets</a></li>
+        <li><a href="../collections/index.html">All Collections</a></li>
+        <li><a href="../collections/all.html">All Products</a></li>
+        <li><a href="https://souleora.com">Visit Full Store</a></li>
+      </ul>
+    </div>
+    <div class="footer-subscribe">
+      <h4>Stay Connected</h4>
+      <p>Subscribe to get spiritual insights, new arrivals & exclusive offers.</p>
+      <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Souleora. All rights reserved.</span>
+    <span>Made with ✨ for spiritual souls everywhere</span>
+  </div>
+</footer>
+<script>
+
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    if (toggle) toggle.addEventListener('click', () => links.classList.toggle('open'));
+    function handleSubscribe(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = '✓ Subscribed!';
+      btn.style.background = '#2ecc71';
+      setTimeout(() => { btn.textContent = 'Subscribe'; btn.style.background = ''; }, 3000);
+    }
+    
+
+</script>
+</body>
+</html>
