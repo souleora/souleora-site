@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soul Bracelets — Souleora | Personalized Zodiac Jewelry</title>
-  <meta name="description" content="Discover your personalized zodiac Soul Bracelet. Crafted for your star sign, infused with intention. $29.99 — was $49.00.">
+  <meta name="description" content="Discover your personalized zodiac Soul Bracelet. Crafted for your star sign, infused with intention. $1.00 — was $49.00.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -472,9 +472,9 @@
     <h1>Your Star Sign.<br><span>Your Soul Bracelet.</span></h1>
     <p class="hero-sub">Handcrafted zodiac bracelets infused with the energy of your star sign. A gift from the cosmos, made just for you.</p>
     <div class="hero-price">
-      <span class="price-current">$29.99</span>
+      <span class="price-current">$1.00</span>
       <span class="price-was">$49.00</span>
-      <span class="price-save">Save 39%</span>
+      <span class="price-save">Save 98%</span>
     </div>
     <a href="#choose" class="cta-button">Choose Your Sign</a>
   </section>
@@ -549,24 +549,24 @@
   <!-- Sticky Buy Bar -->
   <div class="buy-bar" id="buy-bar">
     <span class="buy-bar-text">Your pick: <strong id="bar-sign">—</strong></span>
-    <button class="cta-button" id="bar-buy" disabled>Buy Now — $29.99</button>
+    <button class="cta-button" id="bar-buy" disabled>Buy Now — $1.00</button>
   </div>
 
   <script>
     // ---- STRIPE PAYMENT LINKS (live) ----
     const paymentLinks = {
-      aries:       'https://buy.stripe.com/eVq28rdAy92pcOH3Pfe7m00',
-      taurus:      'https://buy.stripe.com/3cI4gz1RQfqNdSLgC1e7m01',
-      gemini:      'https://buy.stripe.com/00w00jbsq0vT7un2Lbe7m02',
-      cancer:      'https://buy.stripe.com/bJebJ1fIGdiF01V71re7m03',
-      leo:         'https://buy.stripe.com/7sY14n9kidiFdSLadDe7m04',
-      virgo:       'https://buy.stripe.com/4gM14n9kiceB7un4Tje7m05',
-      libra:       'https://buy.stripe.com/fZu8wP5422E115ZetTe7m06',
-      scorpio:     'https://buy.stripe.com/7sYcN5cwu3I5g0T85ve7m07',
-      sagittarius: 'https://buy.stripe.com/7sYfZhfIGa6tcOHadDe7m08',
-      capricorn:   'https://buy.stripe.com/dRm9ATfIG6Uh2a33Pfe7m09',
-      aquarius:    'https://buy.stripe.com/aFa7sL0NM6UhdSL5Xne7m0a',
-      pisces:      'https://buy.stripe.com/aFa14n7ca0vT6qj85ve7m0b',
+      aquarius:     'https://buy.stripe.com/3cI00j6866UhcOH0D3e7m0d',
+      aries:        'https://buy.stripe.com/8x23cvcwubax7un4Tje7m0n',
+      cancer:       'https://buy.stripe.com/fZucN50NMfqNdSLfxXe7m0k',
+      capricorn:    'https://buy.stripe.com/eVq00jeEC0vTaGz4Tje7m0e',
+      gemini:       'https://buy.stripe.com/28EfZh686guR2a399ze7m0l',
+      leo:          'https://buy.stripe.com/7sY5kDaombaxeWP99ze7m0j',
+      libra:        'https://buy.stripe.com/7sY28r7ca4M9bKDetTe7m0h',
+      pisces:       'https://buy.stripe.com/dRm4gzcwua6taGz1H7e7m0c',
+      sagittarius:  'https://buy.stripe.com/eVq4gz3ZY92p3e7clLe7m0f',
+      scorpio:      'https://buy.stripe.com/9B63cvfIG7Yl01VadDe7m0g',
+      taurus:       'https://buy.stripe.com/6oUeVdbsq1zX3e7etTe7m0m',
+      virgo:        'https://buy.stripe.com/bJe6oH0NMfqN15Z1H7e7m0i',
     };
 
     // ---- ZODIAC DATA ----
@@ -599,7 +599,7 @@
           <div class="zodiac-name">${s.name}</div>
           <div class="zodiac-dates">${s.dates}</div>
           <div class="zodiac-price-row">
-            <span class="zodiac-price">$29.99</span>
+            <span class="zodiac-price">$1.00</span>
             <span class="zodiac-was">$49.00</span>
           </div>
         </div>
@@ -617,7 +617,7 @@
       // Update buttons
       const buyBottom = document.getElementById('buy-bottom');
       buyBottom.disabled = false;
-      buyBottom.textContent = `Buy ${name} Bracelet — $29.99`;
+      buyBottom.textContent = `Buy ${name} Bracelet — $1.00`;
       buyBottom.onclick = () => checkout(id);
 
       const barBuy = document.getElementById('bar-buy');
